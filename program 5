@@ -1,0 +1,42 @@
+#Count characters, words and lines in a text file.
+#counting number of lines
+count_lines = 0
+f = open("first1.txt", "r")
+for lines in f.readlines():
+    count_lines+=1
+print(f"the numbers of lines in the text file is {count_lines}")
+f.close()
+
+#counting number of characters
+f = open("first1.txt", "r")
+count_char = 0
+for i in f.readlines():
+    j = i.replace(" ","")
+    count_char += len(j)
+print(f"Numbers of characters in text file is {count_char}")
+f.close()
+
+#counting numbers of words
+f = open("first1.txt", "r")
+count_word = 0
+for i in f.readlines():
+    k = i.split()
+    for s in k:
+        count_word += 1
+print(f"Numbers of words in text file is {count_word}")
+
+
+Hello world i love to program
+My name is david ekechukwu, Mr kiran is the best python teacher
+how is your day going
+Curtains forcing their will
+against the wind,
+children sleep,
+exchanging dreams with
+seraphim. The city
+drags itself awake on
+subway straps; and
+I, an alarm, awake as a
+rumor of war
+lie stretching into dawn
+unasked and unheeded.
