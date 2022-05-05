@@ -1,0 +1,27 @@
+#read an entire text file
+n = int(input("Enter number of lines you want ---> "))
+count = 0
+f = open("first1.txt","r")
+for i in f.readlines():
+    count += 1
+    print(i)
+    if count == n:
+        break
+#print(f.read())
+f.close()
+
+
+#Hello world i love to program
+#My name is david ekechukwu, Mr kiran is the best python teacher
+#how is your day going
+#Curtains forcing their will
+#against the wind,
+#children sleep,
+#exchanging dreams with
+#seraphim. The city
+#drags itself awake on
+#subway straps; and
+#I, an alarm, awake as a
+#rumor of war
+#lie stretching into dawn
+#unasked and unheeded.
