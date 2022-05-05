@@ -1,0 +1,17 @@
+#read an entire text file
+f = open("first.txt", 'r')
+e = open("even.txt","x")
+o = open("odd.txt", "x")
+for i in f.readlines():
+    l =int(i)
+    if (l%2 == 0):
+        e = open("even.txt", 'a')
+        e.write(str(l)+'\n')
+    else:
+        o = open("odd.txt", 'a')
+        o.write(str(l)+ '\n')
+f.close()
+e.close()
+o.close()
+
+# remember to create a text file to give the numbers
