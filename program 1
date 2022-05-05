@@ -1,0 +1,7 @@
+#read an entire text file
+f = open("first1.txt", "w")
+f.write("Hello world i love to program\n")
+f.write("My name is david ekechukwu, Mr kiran is the best python teacher")
+f = open("first1.txt","r")
+print(f.read())
+f.close()
