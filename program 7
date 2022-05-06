@@ -1,0 +1,20 @@
+f = open("first.txt", "r")
+count_word = 0
+for i in f.readlines():
+    k = i.split()
+    for s in k:
+        st = reversed(s)
+        if list(st)==list(s):
+            print(s)
+
+Curtains forcing their will dad
+against the wind mom,
+children sleep noon,
+exchanging dreams with repaper
+seraphim. The city racecar
+drags itself awake on saippuakivikauppias
+subway straps; and tenet
+I, an alarm, awake as a stats
+rumor of war wow
+lie stretching into dawn sagas
+unasked and unheeded rotor.
